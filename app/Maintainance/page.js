@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const page = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center h-screen">
     <div className="bg-white p-8 rounded-lg shadow-md text-center">
       <h1 className="text-3xl font-semibold mb-4 text-gray-800">
         Med Magic is Under Maintenance
