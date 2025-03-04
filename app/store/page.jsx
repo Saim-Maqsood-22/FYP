@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-
+import Head from 'next/head';
 export const generateMetaData = () => {
   return {
     title: "medMagic - store",
@@ -31,6 +31,9 @@ const products = [
 ];
 
 const page = () => {
+    <Head>
+        <title>{generateMetaData().title}</title>
+    </Head>
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => {
