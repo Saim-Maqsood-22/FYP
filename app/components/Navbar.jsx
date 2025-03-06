@@ -32,7 +32,7 @@ const HamburgerNavbar = () => {
   return (
     <nav className="relative flex items-center justify-between p-4">
       <div className="flex items-center">
-        <Image src="/logo.jpg" alt="Logo" width={50} height={50} className="mr-4" />
+        <Image src="/Logo.jpg" alt="Logo" width={50} height={50} className="mr-4" />
       </div>
 
       <div className="flex items-center">
