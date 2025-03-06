@@ -1,24 +1,75 @@
-"use client"
-import Image from "next/image"
-import Link from "next/link"
+'use client';
 
-const Navbar = () => {
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+
+const HamburgerNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (typeof window !== 'undefined') {
+        setIsSmallScreen(window.innerWidth < 768);
+        if (window.innerWidth >= 768) {
+          setIsOpen(false);
+        }
+      }
+    };
+
+    if (typeof window !== 'undefined') {
+      setIsSmallScreen(window.innerWidth < 768);
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="w-full text-white">
-      <Image src={"/Logo.jpg"} width={200} height={300} alt="Logo" className="m-auto w-5 h-5 sm:w-10 sm:h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 2xl:w-32 2xl:h-32 rounded-full" />
-      <div className="flex justify-end">
-      <Link href="/Maintainance" className="p-2 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Sign In</Link>
-      <Link href="/Maintainance" className="p-2 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Sign Up</Link>
+    <nav className="relative flex items-center justify-between p-4">
+      <div className="flex items-center">
+        <Image src="/logo.jpg" alt="Logo" width={50} height={50} className="mr-4" />
       </div>
-      <div className="flex justify-center flex-wrap">
-        <Link href="/" className="p-2 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Home</Link>
-        <Link href="/Maintainance" className="p-2 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Store</Link>
-        <Link href="/about" className="p-2 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">About Us</Link>
-        <Link href="/Maintainance" className="p-2 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Contact Us</Link>
-        <Link href="/FAQ" className="p-2 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">FAQs</Link>
-      </div>
-    </div>
-  )
-}
 
-export default Navbar
+      <div className="flex items-center">
+        {isSmallScreen && (
+          <button className="text-2xl text-white" onClick={toggleMenu}>
+            {isOpen ? '✕' : '☰'}
+          </button>
+        )}
+      </div>
+
+      {(isOpen || !isSmallScreen) && (
+        <div
+          className={`${
+            isSmallScreen
+              ? 'absolute top-20 right-4 bg-white shadow-md rounded-md w-48'
+              : 'flex space-x-4'
+          }`}
+        >
+          <Link href="/" className="block p-2 hover:bg-gray-100">
+            Home
+          </Link>
+          <Link href="/Maintainance" className="block p-2 hover:bg-gray-100">
+            Store
+          </Link>
+          <Link href="/about" className="block p-2 hover:bg-gray-100">
+            About Us
+          </Link>
+          <Link href="/Maintainance" className="block p-2 hover:bg-gray-100">
+            Contact Us
+          </Link>
+          <Link href="/FAQ" className="block p-2 hover:bg-gray-100">
+            FAQ
+          </Link>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default HamburgerNavbar;
