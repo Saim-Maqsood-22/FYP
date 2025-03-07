@@ -47,23 +47,23 @@ const HamburgerNavbar = () => {
         <div
           className={`${
             isSmallScreen
-              ? 'absolute top-20 right-4 bg-white shadow-md rounded-md w-48'
+              ? 'absolute top-20 right-4 bg-[#1a1a1a] shadow-md rounded-md w-48'
               : 'flex space-x-4'
           }`}
         >
-          <Link href="/" className="block p-2 hover:bg-gray-100">
+          <Link href="/" className="block p-2 text-white hover:bg-red-600">
             Home
           </Link>
-          <Link href="/store" className="block p-2 hover:bg-gray-100">
+          <Link href="/" className="block p-2 text-white hover:bg-red-600">
             <button disabled="disabled">Store</button>
           </Link>
-          <Link href="/about" className="block p-2 hover:bg-gray-100">
+          <Link href="/about" className="block p-2 text-white hover:bg-red-600">
             About Us
           </Link>
-          <Link href="/contact" className="block p-2 hover:bg-gray-100">
+          <Link href="/" className="block p-2 text-white hover:bg-red-600">
           <button disabled="disabled">Contact Us</button>
           </Link>
-          <Link href="/FAQ" className="block p-2 hover:bg-gray-100">
+          <Link href="/FAQ" className="block p-2 text-white hover:bg-red-600">
             FAQ
           </Link>
         </div>
