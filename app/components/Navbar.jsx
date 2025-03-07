@@ -54,14 +54,14 @@ const HamburgerNavbar = () => {
           <Link href="/" className="block p-2 hover:bg-gray-100">
             Home
           </Link>
-          <Link href="/Maintainance" className="block p-2 hover:bg-gray-100">
-            Store
+          <Link href="/store" className="block p-2 hover:bg-gray-100">
+            <button disabled="disabled">Store</button>
           </Link>
           <Link href="/about" className="block p-2 hover:bg-gray-100">
             About Us
           </Link>
-          <Link href="/Maintainance" className="block p-2 hover:bg-gray-100">
-            Contact Us
+          <Link href="/contact" className="block p-2 hover:bg-gray-100">
+          <button disabled="disabled">Contact Us</button>
           </Link>
           <Link href="/FAQ" className="block p-2 hover:bg-gray-100">
             FAQ
