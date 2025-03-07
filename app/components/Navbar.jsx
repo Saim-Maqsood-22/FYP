@@ -47,7 +47,7 @@ const HamburgerNavbar = () => {
         <div
           className={`${
             isSmallScreen
-              ? 'absolute top-20 right-4 bg-[#1a1a1a] shadow-md rounded-md w-48'
+              ? 'absolute top-20 right-4 bg-[#1] shadow-md rounded-md w-48'
               : 'flex space-x-4'
           }`}
         >
