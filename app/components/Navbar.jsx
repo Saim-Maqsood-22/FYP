@@ -66,6 +66,9 @@ const HamburgerNavbar = () => {
           <Link href="/FAQ" className="block p-2 text-white hover:bg-red-600">
             FAQ
           </Link>
+          <Link href="/appointment" className="block p-2 text-white hover:bg-red-600">
+            Appointment
+          </Link>
         </div>
       )}
     </nav>
