@@ -29,7 +29,6 @@ const page = () => {
           <AccordionTrigger className="text-white">Does Med Magic support delivery providers?</AccordionTrigger>
           <AccordionContent className="text-white">
             Yes. We support popular delivery providers like indrive courier and yango delivery
-            components&apos; aesthetic.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
