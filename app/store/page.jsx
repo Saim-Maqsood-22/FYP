@@ -63,7 +63,7 @@ const page = () => {
           </div>
       </div>
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <Image src="/Face_mask.jpg" alt="Product" className="w-full h-40 object-cover"width={150} height={150}/>
+      <Image src="/face_mask.jpg" alt="Product" className="w-full h-40 object-cover"width={150} height={150}/>
           <div className="p-4">
               <h4 className="font-bold text-lg text-gray-800">Face Masks</h4>
               <p className="text-gray-600 mt-2">$28.00</p>
@@ -95,7 +95,7 @@ const page = () => {
           </div>
       </div>
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <Image src="/electrolytes.jpg" alt="Product" className="w-full h-40 object-cover"width={150} height={150}/>
+      <Image src="/electrolyte.jpg" alt="Product" className="w-full h-40 object-cover"width={150} height={150}/>
           <div className="p-4">
               <h4 className="font-bold text-lg text-gray-800">Electrolyte Sachets</h4>
               <p className="text-gray-600 mt-2">$29.00</p>
@@ -103,7 +103,7 @@ const page = () => {
           </div>
       </div>
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <Image src="/Lozenges.jpg" alt="Product" className="w-full h-40 object-cover"width={150} height={150}/>
+      <Image src="/lozenges.jpg" alt="Product" className="w-full h-40 object-cover"width={150} height={150}/>
           <div className="p-4">
               <h4 className="font-bold text-lg text-gray-800">Throat Lozenges</h4>
               <p className="text-gray-600 mt-2">$23.00</p>
