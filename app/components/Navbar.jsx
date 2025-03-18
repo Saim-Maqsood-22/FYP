@@ -63,7 +63,7 @@ const SimpleHamburgerNavbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-gray-300">
+                <Link href="/store" className="hover:text-gray-300">
                   Store
                 </Link>
               </li>
@@ -102,7 +102,7 @@ const SimpleHamburgerNavbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-gray-300">
+              <Link href="/store" className="hover:text-gray-300">
                 Store
               </Link>
             </li>
