@@ -38,6 +38,7 @@ const Banner = () => {
               </button>
             </Link>
           </div>
+          
         </div>
       </div>
     </>
