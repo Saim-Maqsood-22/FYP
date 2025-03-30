@@ -32,7 +32,7 @@ const Banner = () => {
             Welcome to <span className={`${fonda.className} text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl`}>medMagic</span>
           </p>
           <div className='mt-8'>
-            <Link href={"/"}>
+            <Link href={"/store"}>
               <button type="submit" className="bg-red-600 px-2 py-2 rounded-lg text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
                 SHOP NOW
               </button>
