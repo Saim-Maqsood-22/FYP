@@ -110,7 +110,7 @@ const BMICalculator = () => {
             Weight (kg)
           </label>
           <input
-            type="text"
+            type="number"
             id="weight"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
