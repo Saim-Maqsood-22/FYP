@@ -89,7 +89,7 @@ const BMICalculator = () => {
             Height (cm)
           </label>
           <input
-            type="text"
+            type="number"
             id="height"
             value={height}
             onChange={(e) => setHeight(e.target.value)}
@@ -188,8 +188,6 @@ const BMICalculator = () => {
               <span>≥ 30</span>
             </div>
           </div>
-
-          {/* WEIGHT LOSS TIPS SECTION (shown only if BMI ≥ 25) */}
           {bmi >= 25 && (
             <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-100">
               <h4 className="font-bold text-blue-800 mb-2">Tips for Healthy Weight Loss:</h4>
