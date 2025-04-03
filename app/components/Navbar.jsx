@@ -87,6 +87,11 @@ const SimpleHamburgerNavbar = () => {
                 Appointments
               </Link>
             </li>
+            <li>
+              <Link href="/quiz" className="hover:text-gray-300">
+                Take Quiz
+              </Link>
+              </li>
             </ul>
           </nav>
         )}
@@ -124,6 +129,11 @@ const SimpleHamburgerNavbar = () => {
             <li>
               <Link href="/appointments" className="hover:text-gray-300">
                 Appointments
+              </Link>
+              </li>
+              <li>
+              <Link href="/quiz" className="hover:text-gray-300">
+                Take Quiz
               </Link>
             </li>
           </ul>
